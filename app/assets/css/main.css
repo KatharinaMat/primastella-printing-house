@@ -91,6 +91,59 @@ body {
   max-width: 1200px;
 }
 
+.primastella-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+
+.primastella-mask-text,
+.primastella-outline-text {
+  font-family: "Monoton", sans-serif;
+  font-size: 180px;
+}
+
+.primastella-mask-text {
+  fill: white;
+}
+
+.primastella-outline-text {
+  fill: none;
+  stroke: #f4f1ea;
+  stroke-width: 2.2;
+  paint-order: stroke;
+}
+
+/* gallery fade */
+.gallery-img {
+  opacity: 0;
+  animation: fadeGallery 28s infinite;
+}
+
+.gallery-img-1 { animation-delay: 0s; }
+.gallery-img-2 { animation-delay: 2s; }
+.gallery-img-3 { animation-delay: 4s; }
+.gallery-img-4 { animation-delay: 6s; }
+.gallery-img-5 { animation-delay: 8s; }
+.gallery-img-6 { animation-delay: 10s; }
+.gallery-img-7 { animation-delay: 12s; }
+
+@keyframes fadeGallery {
+  0%   { opacity: 0; }
+  8%   { opacity: 1; }
+  22%  { opacity: 1; }
+  30%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.primastella-outline-text {
+  fill: none;
+  stroke: #f4f1ea;
+  stroke-width: 2.2;
+  paint-order: stroke;
+}
+
 .hero-subtitle {
   margin-top: 0.7rem;
   margin-bottom: 0;
