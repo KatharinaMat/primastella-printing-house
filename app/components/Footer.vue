@@ -2,6 +2,33 @@
   <footer id="contact" class="site-footer">
     <div class="site-footer-inner">
       <div class="site-footer-info">
+        <p class="site-footer-line site-footer-contact-line">
+          <button
+            type="button"
+            class="site-footer-inline-btn"
+            @click="copyEmail"
+          >
+            {{ t("footer.email") }}
+          </button>
+
+          <span class="site-footer-separator"> | </span>
+
+          <a
+            class="site-footer-phone mobile-only-phone"
+            :href="'tel:' + t('footer.phone').replace(/\s+/g, '')"
+          >
+            {{ t("footer.phone") }}
+          </a>
+
+          <span class="desktop-only-phone">
+            {{ t("footer.phone") }}
+          </span>
+
+          <span v-if="copiedMessageVisible" class="site-footer-copied">
+            {{ t("footer.copied") }}
+          </span>
+        </p>
+
         <p class="site-footer-line">
           <strong>{{ t("footer.open") }}</strong>
         </p>
@@ -12,10 +39,6 @@
 
         <p class="site-footer-line">
           {{ t("footer.entrance") }}
-        </p>
-
-        <p class="site-footer-line">
-          {{ t("footer.contact") }}
         </p>
       </div>
 
@@ -38,9 +61,6 @@
         <span>{{ t("footer.cookieText") }}</span>
         <button @click="acceptCookies">{{ t("footer.cookieButton") }}</button>
       </div>
-      <div v-if="!mapConsent" class="map-consent">
-        {{ t("footer.mapConsent") }}
-      </div>
     </div>
 
     <p class="site-footer-copy">
@@ -54,6 +74,21 @@ const { t } = useLocale();
 
 const mapConsent = ref(false);
 const showCookieBanner = ref(false);
+
+const copiedMessageVisible = ref(false);
+
+async function copyEmail() {
+  try {
+    await navigator.clipboard.writeText(t("footer.email"));
+    copiedMessageVisible.value = true;
+
+    setTimeout(() => {
+      copiedMessageVisible.value = false;
+    }, 1400);
+  } catch (error) {
+    console.error("Failed to copy email:", error);
+  }
+}
 
 onMounted(() => {
   const consent = localStorage.getItem("mapConsent");

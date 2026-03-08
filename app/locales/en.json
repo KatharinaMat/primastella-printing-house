@@ -65,10 +65,12 @@
   },
 
   "footer": {
+    "email": "info@primastella.ee",
+    "phone": "+372 6380 680",
+    "copied": "Copied!",
     "open": "Open Mon–Fri 10–18",
     "address": "Pallasti 1 / Katusepapi 20, 11412 Tallinn, Harjumaa, Estonia",
     "entrance": "Entrance from Pallasti Street (doorbell, 2nd floor).",
-    "contact": "info[at]primastella.ee | +372 6380 680",
     "copy": "© 2025 Primastella OÜ",
     "mapConsent": "To display the map, please accept cookies in the notice below.",
     "cookieText": "This site uses Google Maps, which may set cookies managed by Google.",
