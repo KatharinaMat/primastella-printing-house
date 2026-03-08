@@ -89,7 +89,7 @@
     </g>
 
       <text
-        x="47.5%"
+        x="47%"
         y="50%"
         text-anchor="middle"
         dominant-baseline="middle"
