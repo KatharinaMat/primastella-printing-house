@@ -10,7 +10,7 @@
         <mask id="text-mask">
           <rect width="100%" height="100%" fill="black" />
           <text
-            x="50%"
+            x="47.5%"
             y="50%"
             text-anchor="middle"
             dominant-baseline="middle"
@@ -89,7 +89,7 @@
     </g>
 
       <text
-        x="50%"
+        x="47.5%"
         y="50%"
         text-anchor="middle"
         dominant-baseline="middle"
