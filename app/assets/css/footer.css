@@ -66,3 +66,54 @@
     min-height: 320px;
   }
 }
+
+/* map placeholder */
+
+.map-consent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 260px;
+  text-align: center;
+
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 14px;
+  padding: 20px;
+
+  font-size: 0.95rem;
+}
+
+/* =================================
+   COOKIE BANNER
+   ================================= */
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: #222;
+  color: white;
+
+  text-align: center;
+  padding: 12px 16px;
+
+  font-size: 14px;
+  z-index: 9999;
+
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cookie-banner button {
+  margin-left: 15px;
+  background: #4caf50;
+  color: white;
+
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+
+  cursor: pointer;
+}

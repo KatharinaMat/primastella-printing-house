@@ -17,6 +17,9 @@
     "address": "Pallasti 1 / Katusepapi 20, 11412 Tallinn, Harjumaa, Eesti",
     "entrance": "Sissepääs Pallasti tänavalt (uksekell, II korrus).",
     "contact": "info[at]primastella.ee | +372 6380 680",
-    "copy": "© 2025 Primastella OÜ"
+    "copy": "© 2025 Primastella OÜ",
+    "mapConsent": "Kaardi kuvamiseks nõustu küpsistega allolevas teates.",
+    "cookieText": "See veebileht kasutab Google Mapsi, mis võib seada Google'i hallatavaid küpsiseid.",
+    "cookieButton": "OK"
   }
 }
