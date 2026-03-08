@@ -70,6 +70,7 @@
 
 .desktop-only-phone {
   display: none;
+  font-weight: 700;
 }
 
 .site-footer-map iframe {
