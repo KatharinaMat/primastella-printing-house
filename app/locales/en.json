@@ -11,5 +11,12 @@
     "intro": "We started in the printing industry in 1999 and operate with 100% Estonian capital.",
     "text1": "Our equipment and experienced team ensure fast, high-quality, and reliable service.",
     "text2": "Primastella offers a wide range of printing services — business cards, flyers, brochures, NCR forms, stickers, calendars, posters, and envelopes — all produced with quality and speed"
+  },
+  "footer": {
+    "open": "Open Mon–Fri 10–18",
+    "address": "Pallasti 1 / Katusepapi 20, 11412 Tallinn, Harjumaa, Estonia",
+    "entrance": "Entrance from Pallasti Street (doorbell, 2nd floor).",
+    "contact": "info[at]primastella.ee | +372 6380 680",
+    "copy": "© 2025 Primastella OÜ"
   }
 }

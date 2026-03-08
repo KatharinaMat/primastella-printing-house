@@ -55,6 +55,7 @@
       </p>
     </div>
   </section>
+  <Footer />
 </template>
 <script setup>
 const { t, setLocale, locale } = useLocale();
