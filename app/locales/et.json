@@ -1,0 +1,10 @@
+{
+  "nav": {
+    "about": "Meist",
+    "services": "Teenused",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "subtitle": "Tere tulemast meie trükikotta!"
+  }
+}

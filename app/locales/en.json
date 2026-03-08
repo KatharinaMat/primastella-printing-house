@@ -1,0 +1,10 @@
+{
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Welcome to our printing house!"
+  }
+}
