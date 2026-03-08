@@ -6,11 +6,20 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      htmlAttrs: {
+        lang: "et",
+      },
       link: [
         {
           rel: "icon",
           type: "image/x-icon",
           href: "/images/primastella_favicon.ico",
+        },
+      ],
+      meta: [
+        {
+          name: "viewport",
+          content: "width=device-width, initial-scale=1",
         },
       ],
     },

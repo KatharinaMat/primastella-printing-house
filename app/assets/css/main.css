@@ -153,3 +153,23 @@
     transition: none;
   }
 }
+
+/* =================================
+   SERVICE PAGES
+   ================================= */
+.service-page {
+  padding: 80px 20px;
+}
+
+.service-page .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 30px;
+  color: var(--teal);
+  text-decoration: none;
+}
