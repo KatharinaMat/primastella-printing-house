@@ -6,5 +6,10 @@
   },
   "hero": {
     "subtitle": "Welcome to our printing house!"
+  },
+  "about": {
+    "intro": "We started in the printing industry in 1999 and operate with 100% Estonian capital.",
+    "text1": "Our equipment and experienced team ensure fast, high-quality, and reliable service.",
+    "text2": "Primastella offers a wide range of printing services — business cards, flyers, brochures, NCR forms, stickers, calendars, posters, and envelopes — all produced with quality and speed"
   }
 }

@@ -57,3 +57,98 @@
     padding: 0.35rem 0.65rem;
   }
 }
+/* =================================
+   ABOUT PRINTING SECTION
+   ================================= */
+
+.about-printing {
+  padding: 70px 20px;
+}
+
+.about-printing-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-printing-intro {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.1rem;
+  line-height: 1.3;
+  color: var(--color-teal);
+
+  margin-bottom: 26px;
+}
+
+.about-printing-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #2b2b2b;
+
+  margin-bottom: 18px;
+}
+/* Desktop override */
+@media (min-width: 860px) {
+  .about-printing {
+    padding: 90px 20px;
+  }
+
+  .about-printing-inner {
+    max-width: 780px;
+  }
+
+  .about-printing-intro {
+    font-size: 2.6rem;
+  }
+
+  .about-printing-text {
+    font-size: 1.12rem;
+  }
+}
+/* =================================
+   ABOUT PRINTING SECTION - ANIMATION
+   ================================= */
+/* ink reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  filter: blur(7px);
+  transition:
+    opacity 0.85s ease,
+    transform 0.85s ease,
+    filter 1s ease;
+  will-change: opacity, transform, filter;
+}
+
+.about-printing.is-visible .reveal {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.about-printing.is-visible .reveal-1 {
+  transition-delay: 0.08s;
+}
+
+.about-printing.is-visible .reveal-2 {
+  transition-delay: 0.28s;
+}
+
+.about-printing.is-visible .reveal-3 {
+  transition-delay: 0.48s;
+}
+
+/* Desktop override */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .about-printing.is-visible .reveal,
+  .about-printing.is-visible .reveal-1,
+  .about-printing.is-visible .reveal-2,
+  .about-printing.is-visible .reveal-3 {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+}
