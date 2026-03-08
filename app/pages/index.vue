@@ -8,8 +8,20 @@
       </nav>
 
       <div class="lang-switch">
-        <button @click="setLocale('et')">ET</button>
-        <button @click="setLocale('en')">EN</button>
+        <button
+          type="button"
+          :class="{ active: locale === 'et' }"
+          @click="changeLocale('et')"
+        >
+          ET
+        </button>
+        <button
+          type="button"
+          :class="{ active: locale === 'en' }"
+          @click="changeLocale('en')"
+        >
+          EN
+        </button>
       </div>
     </div>
 
@@ -24,4 +36,16 @@
 </template>
 <script setup>
 const { t, setLocale, locale } = useLocale();
+
+const changeLocale = (newLocale) => {
+  setLocale(newLocale);
+  sessionStorage.setItem("locale", newLocale);
+};
+
+onMounted(() => {
+  const savedLocale = sessionStorage.getItem("locale");
+  if (savedLocale) {
+    setLocale(savedLocale);
+  }
+});
 </script>
