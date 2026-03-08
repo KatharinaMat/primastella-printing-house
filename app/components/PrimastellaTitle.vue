@@ -1,24 +1,25 @@
 <template>
-  <svg
-    class="primastella-svg"
-    viewBox="-40 0 1345 220"
-    xmlns="http://www.w3.org/2000/svg"
-    aria-label="Primastella"
-  >
-    <defs>
-      <mask id="text-mask">
-        <rect width="100%" height="100%" fill="black" />
-        <text
-          x="50%"
-          y="50%"
-          text-anchor="middle"
-          dominant-baseline="middle"
-          class="primastella-mask-text"
-        >
-          PRIMASTELLA
-        </text>
-      </mask>
-    </defs>
+  <div class="primastella-svg-wrap">
+    <svg
+      class="primastella-svg"
+      viewBox="-40 0 1345 220"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="Primastella"
+    >
+      <defs>
+        <mask id="text-mask">
+          <rect width="100%" height="100%" fill="black" />
+          <text
+            x="50%"
+            y="50%"
+            text-anchor="middle"
+            dominant-baseline="middle"
+            class="primastella-mask-text"
+          >
+            PRIMASTELLA
+          </text>
+        </mask>
+      </defs>
 
     <!-- Fading gallery inside letters -->
     <g mask="url(#text-mask)">
@@ -87,15 +88,15 @@
       />
     </g>
 
-    <!-- Outline always visible -->
-    <text
-      x="50%"
-      y="50%"
-      text-anchor="middle"
-      dominant-baseline="middle"
-      class="primastella-outline-text"
-    >
-      PRIMASTELLA
-    </text>
-  </svg>
+      <text
+        x="50%"
+        y="50%"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        class="primastella-outline-text"
+      >
+        PRIMASTELLA
+      </text>
+    </svg>
+  </div>
 </template>
