@@ -4,14 +4,28 @@
     "services": "Teenused",
     "contact": "Võta ühendust"
   },
+
   "hero": {
     "subtitle": "Tere tulemast meie trükikotta!"
   },
+
   "about": {
     "intro": "Alustasime trükindusega 1999. aastal ning tegutseme 100% Eesti kapitalil.",
     "text1": "Meie masinapark ja kogenud professionaalidest meeskond tagavad kiire, kvaliteetse ja usaldusväärse teenuse.",
     "text2": "Pakume laia valikut trükiteenuseid – visiitkaarte, flaiereid, voldikuid, isekopeeruvaid blankette, kleebiseid, kalendreid, plakateid ja ümbrikke."
   },
+
+  "contact": {
+    "title": "Võta ühendust",
+    "name": "Nimi",
+    "email": "Email",
+    "message": "Sõnumi sisu",
+    "send": "Saada sõnum",
+    "sending": "Saadan…",
+    "success": "Aitäh! Sõnum on saadetud.",
+    "error": "Saatmine ebaõnnestus. Palun proovige uuesti."
+  },
+
   "footer": {
     "open": "Oleme avatud E–R 10–18",
     "address": "Pallasti 1 / Katusepapi 20, 11412 Tallinn, Harjumaa, Eesti",

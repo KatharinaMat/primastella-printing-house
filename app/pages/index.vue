@@ -55,8 +55,10 @@
       </p>
     </div>
   </section>
+  <ContactSection />
   <Footer />
 </template>
+
 <script setup>
 const { t, setLocale, locale } = useLocale();
 
