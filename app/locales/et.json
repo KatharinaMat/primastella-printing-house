@@ -15,6 +15,44 @@
     "text2": "Pakume laia valikut trükiteenuseid – visiitkaarte, flaiereid, voldikuid, isekopeeruvaid blankette, kleebiseid, kalendreid, plakateid ja ümbrikke."
   },
 
+  "services": {
+    "title": "Teenused",
+    "items": {
+      "forms": {
+        "title": "Isekopeeruvad blanketid",
+        "description": "Dubleeritud blankettide lahendused."
+      },
+      "businessCards": {
+        "title": "Visiitkaardid",
+        "description": "Kohandatud ja kvaliteetsed visiitkaardid."
+      },
+      "flyers": {
+        "title": "Flaierid",
+        "description": "Reklaamlehed üritusteks."
+      },
+      "brochures": {
+        "title": "Voldikud",
+        "description": "Professionaalsed voldikud esitlusteks või juhenditeks."
+      },
+      "stickers": {
+        "title": "Kleebised",
+        "description": "Kleebised brändimiseks ja pakenditele."
+      },
+      "calendars": {
+        "title": "Kalendrid",
+        "description": "Kohandatud kalendrid äri- ja isiklikuks kasutuseks."
+      },
+      "posters": {
+        "title": "Plakatid ja laiformaattrükk",
+        "description": "Suureformaadilised trükised ja plakatid."
+      },
+      "envelopes": {
+        "title": "Ümbrikud",
+        "description": "Kvaliteetsed ümbrikud teie saadetistele."
+      }
+    }
+  },
+
   "contact": {
     "title": "Võta ühendust",
     "name": "Nimi",

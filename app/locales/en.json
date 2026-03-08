@@ -15,6 +15,44 @@
     "text2": "Primastella offers a wide range of printing services — business cards, flyers, brochures, NCR forms, stickers, calendars, posters, and envelopes — all produced with quality and speed"
   },
 
+  "services": {
+    "title": "Services",
+    "items": {
+      "forms": {
+        "title": "NCR Forms",
+        "description": "Duplicate and self-copying business forms."
+      },
+      "businessCards": {
+        "title": "Business Cards",
+        "description": "Custom-designed, high-quality business cards."
+      },
+      "flyers": {
+        "title": "Flyers",
+        "description": "Promotional leaflets and event posters."
+      },
+      "brochures": {
+        "title": "Brochures",
+        "description": "Professional brochures for presentations or guides."
+      },
+      "stickers": {
+        "title": "Stickers",
+        "description": "Branding and packaging stickers."
+      },
+      "calendars": {
+        "title": "Calendars",
+        "description": "Custom-made calendars for business or personal use."
+      },
+      "posters": {
+        "title": "Posters & Large-format",
+        "description": "High-quality large-format prints and posters."
+      },
+      "envelopes": {
+        "title": "Envelopes",
+        "description": "High-quality envelopes for your correspondence."
+      }
+    }
+  },
+
   "contact": {
     "title": "Contact us",
     "name": "Name",

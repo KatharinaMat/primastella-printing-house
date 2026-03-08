@@ -2,10 +2,10 @@
 @import "./hero.css";
 @import "./footer.css";
 @import "./contact.css";
+@import "./services.css";
 /* =================================
    LANG BUTTONS
    ================================= */
-
 .lang-switch {
   display: flex;
   justify-content: center;

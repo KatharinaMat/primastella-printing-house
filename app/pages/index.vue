@@ -55,6 +55,7 @@
       </p>
     </div>
   </section>
+  <ServicesSection />
   <ContactSection />
   <Footer />
 </template>
