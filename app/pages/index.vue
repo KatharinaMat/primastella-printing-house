@@ -16,7 +16,7 @@
     <div class="hero-content">
       <PrimastellaTitle />
       <p class="hero-subtitle">Tere tulemast meie trükikotta!</p>
-      <p class="hero-anno">anno 1999</p>
+      <p class="hero-anno">...anno 1999</p>
     </div>
   </section>
 </template>
