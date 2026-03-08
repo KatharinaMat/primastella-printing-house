@@ -89,7 +89,7 @@
 
 .contact-form button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 10px 24px rgba(19, 79, 92, 0.18);
+  box-shadow: 0 14px 30px rgba(140, 100, 50, 0.15);
   background: #0f3f49;
 }
 
