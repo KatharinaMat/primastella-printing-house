@@ -1,59 +1,9 @@
-/* =================================
-   BASE
-   ================================= */
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #f0ede7;
-  background: #f0ede7;
-}
+@import "./base.css";
+@import "./hero.css";
 
 /* =================================
-   HERO
+   LANG BUTTONS
    ================================= */
-
-.hero {
-  height: 50svh;
-  min-height: 50svh;
-  background: #134f5c;
-  padding: 0.85rem 1rem 1.2rem;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.hero-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.55rem;
-}
-
-.hero-nav {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.hero-nav a {
-  color: #f0ede7;
-  text-decoration: none;
-  font-size: 0.82rem;
-  letter-spacing: 0.08em;
-  padding: 0.35rem 0;
-}
 
 .lang-switch {
   display: flex;
@@ -64,9 +14,9 @@ body {
 
 .lang-switch button {
   appearance: none;
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  background: rgba(255, 255, 255, 0.14);
-  color: #f0ede7;
+  border: 1px solid rgba(240, 237, 231, 0.45);
+  background: rgba(240, 237, 231, 0.14);
+  color: var(--color-cream);
   padding: 0.38rem 0.7rem;
   min-width: 42px;
   border-radius: 999px;
@@ -81,178 +31,16 @@ body {
 }
 
 .lang-switch button:hover {
-  background: rgba(255, 255, 255, 0.24);
-  border-color: rgba(255, 255, 255, 0.7);
+  background: rgba(240, 237, 231, 0.24);
+  border-color: rgba(240, 237, 231, 0.7);
   transform: translateY(-1px);
 }
 
 .lang-switch button.active {
-  background: #f8f6f2;
-  color: #134f5c;
-  border-color: #f8f6f2;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
-}
-
-.hero-content {
-  flex: 1;
-  width: min(100%, 1200px);
-  margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.primastella-svg-wrap {
-  width: 86vw;
-  max-width: 1200px;
-}
-
-.primastella-svg {
-  width: 100%;
-  height: auto;
-  display: block;
-  overflow: visible;
-}
-
-.primastella-mask-text,
-.primastella-outline-text {
-  font-family: "Monoton", sans-serif;
-  font-size: 180px;
-}
-
-.primastella-mask-text {
-  fill: #f0ede7;
-}
-
-.primastella-outline-text {
-  fill: none;
-  stroke: #f4f1ea;
-  stroke-width: 2.2;
-  paint-order: stroke;
-}
-
-/* gallery fade */
-.gallery-img {
-  opacity: 0;
-  animation: fadeGallery 14s infinite;
-}
-
-.gallery-img-1 {
-  animation-delay: 0s;
-}
-.gallery-img-2 {
-  animation-delay: 2s;
-}
-.gallery-img-3 {
-  animation-delay: 4s;
-}
-.gallery-img-4 {
-  animation-delay: 6s;
-}
-.gallery-img-5 {
-  animation-delay: 8s;
-}
-.gallery-img-6 {
-  animation-delay: 10s;
-}
-.gallery-img-7 {
-  animation-delay: 12s;
-}
-
-@keyframes fadeGallery {
-  0% {
-    opacity: 0;
-  }
-  8% {
-    opacity: 1;
-  }
-  22% {
-    opacity: 1;
-  }
-  30% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.primastella-outline-text {
-  fill: none;
-  stroke: #f4f1ea;
-  stroke-width: 2.2;
-  paint-order: stroke;
-}
-
-.hero-subtitle {
-  margin-top: 0.7rem;
-  margin-bottom: 0;
-
-  font-family: "Dancing Script", cursive;
-  font-size: clamp(1.15rem, 4vw, 2rem);
-  font-style: italic;
-  letter-spacing: 0.04em;
-}
-
-.hero-anno {
-  margin-top: 0.9rem;
-  margin-left: auto;
-
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
-  letter-spacing: 0.08em;
-  color: #f0ede7;
-}
-
-/* =================================
-   SVG TITLE
-   ================================= */
-
-.primastella-svg-wrap {
-  width: 82vw;
-  max-width: 1200px;
-}
-
-.primastella-svg {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.primastella-svg-text {
-  fill: #f4f1ea;
-  font-family: "Monoton", sans-serif;
-  font-size: 150px;
-  letter-spacing: 4px;
-}
-
-/* =================================
-   SUBTITLE + ANNO
-   ================================= */
-
-.hero-subtitle {
-  margin-top: 1rem;
-  margin-bottom: 0;
-
-  font-family: "Dancing Script", cursive;
-  font-size: clamp(1.2rem, 4vw, 2rem);
-  font-style: italic;
-  letter-spacing: 0.08em;
-}
-
-.hero-anno {
-  margin-top: 1.2rem;
-  margin-left: auto;
-
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
-  letter-spacing: 0.08em;
-  color: #f0ede7;
+  background: var(--color-cream);
+  color: var(--color-teal);
+  border-color: var(--color-cream);
+  box-shadow: 0 3px 10px var(--color-shadow);
 }
 
 /* =================================
@@ -260,47 +48,12 @@ body {
    ================================= */
 
 @media (min-width: 860px) {
-  .hero {
-    height: 60vh;
-    min-height: 60vh;
-    padding: 1.25rem 2.5rem 2rem;
-  }
-
-  .hero-top {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    gap: 0;
-  }
-
-  .hero-nav {
-    grid-column: 2;
-    gap: 1.6rem;
-  }
-
-  .hero-nav a {
-    font-size: 0.95rem;
-  }
-
   .lang-switch {
     justify-self: end;
   }
 
-  .lang-btn {
+  .lang-switch button {
     font-size: 0.88rem;
     padding: 0.35rem 0.65rem;
-  }
-
-  .primastella-svg-wrap {
-    width: 72vw;
-    max-width: 1200px;
-  }
-
-  .hero-subtitle {
-    margin-top: 1.2rem;
-  }
-
-  .hero-anno {
-    margin-top: 1.5rem;
   }
 }

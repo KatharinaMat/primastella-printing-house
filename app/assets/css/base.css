@@ -1,0 +1,27 @@
+/* =================================
+   BASE
+   ================================= */
+:root {
+  --color-teal: #134f5c;
+  --color-cream: #f0ede7;
+
+  --color-cream-soft: #f4f1ea;
+  --color-shadow: rgba(0, 0, 0, 0.16);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-cream);
+  background: var(--color-cream);
+}
