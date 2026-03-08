@@ -24,11 +24,13 @@ body {
    ================================= */
 
 .hero {
+  height: 60vh;
   min-height: 60vh;
   background: #134f5c;
-  padding: 1rem 1rem 2.5rem;
+  padding: 1rem 1rem 1.5rem;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .hero-top {
@@ -40,8 +42,9 @@ body {
 .hero-nav {
   grid-column: 2;
   display: flex;
-  gap: 1.6rem;
+  gap: 1.1rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .hero-nav a {
@@ -73,7 +76,7 @@ body {
 
 .hero-content {
   flex: 1;
-  width: min(100%, 1100px);
+  width: min(100%, 1200px);
   margin: 0 auto;
 
   display: flex;
@@ -83,32 +86,51 @@ body {
   text-align: center;
 }
 
+/* =================================
+   SVG TITLE
+   ================================= */
+
+.primastella-svg-wrap {
+  width: 82vw;
+  max-width: 1200px;
+}
+
+.primastella-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.primastella-svg-text {
+  fill: #f4f1ea;
+  font-family: "Monoton", sans-serif;
+  font-size: 150px;
+  letter-spacing: 4px;
+}
+
+/* =================================
+   SUBTITLE + ANNO
+   ================================= */
+
+.hero-subtitle {
+  margin-top: 1rem;
+  margin-bottom: 0;
+
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  font-style: italic;
+  letter-spacing: 0.08em;
+}
+
 .hero-anno {
-  margin-top: 1.8rem;
+  margin-top: 1.2rem;
   margin-left: auto;
 
   font-family: "Playfair Display", serif;
   font-style: italic;
   font-size: clamp(0.9rem, 2vw, 1.2rem);
   letter-spacing: 0.08em;
-  text-transform: lowercase;
   color: rgba(255, 255, 255, 0.88);
-}
-
-.hero-title {
-  margin: 0;
-  font-family: "Monoton", sans-serif;
-  font-size: clamp(2.5rem, 12vw, 6rem);
-  letter-spacing: 0.04em;
-}
-
-.hero-subtitle {
-  margin-top: 1.2rem;
-  margin-bottom: 0;
-  font-family: "Dancing Script", cursive;
-  font-size: clamp(1.2rem, 4vw, 2rem);
-  font-style: italic;
-   letter-spacing: 0.08em;
 }
 
 /* =================================
@@ -117,16 +139,13 @@ body {
 
 @media (min-width: 860px) {
   .hero {
+    height: 60vh;
     min-height: 60vh;
-    padding: 1.25rem 2.5rem 3rem;
-  }
-
-  .hero-top {
-    align-items: center;
+    padding: 1.25rem 2.5rem 2rem;
   }
 
   .hero-nav {
-    gap: 1.5rem;
+    gap: 1.6rem;
   }
 
   .hero-nav a {
@@ -138,7 +157,16 @@ body {
     padding: 0.35rem 0.65rem;
   }
 
+  .primastella-svg-wrap {
+    width: 72vw;
+    max-width: 1200px;
+  }
+
   .hero-subtitle {
+    margin-top: 1.2rem;
+  }
+
+  .hero-anno {
     margin-top: 1.5rem;
   }
 }
