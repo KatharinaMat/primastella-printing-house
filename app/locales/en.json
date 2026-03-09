@@ -3,6 +3,7 @@
     "home": "HOME",
     "about": "ABOUT",
     "services": "SERVICES",
+    "allServices": "ALL SERVICES",
     "contact": "CONTACT US"
   },
 
@@ -81,8 +82,8 @@
   "servicePages": {
     "businessCards": {
       "title": "Business Cards",
-      "intro": "Business cards are an essential part of your company’s visual identity and a practical way to introduce yourself or your brand. We offer various sizes, paper types, and finishes — matte, glossy, laminated, or rounded corners.",
-      "text1": "Primastella Printing House in Tallinn can also help with design to ensure your card reflects your brand professionally and elegantly. All cards are printed on high-quality Colotech 300 gsm white matte paper.",
+      "intro": "Business cards are an essential part of your company’s visual identity and a practical way to introduce yourself or your brand. We offer various sizes, paper types, and finishes — <strong>matte, glossy, laminated</strong>, or <strong>rounded corners</strong>.",
+      "text1": "Primastella Printing House in Tallinn can also help with design to ensure your card reflects your brand professionally and elegantly. All cards are printed on high-quality <strong>Colotech 300 gsm</strong> white matte paper.",
       "text2": "Orders are completed quickly and accurately — a quality business card creates a first impression that lasts."
     }
   }

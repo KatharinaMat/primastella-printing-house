@@ -64,7 +64,7 @@
                 class="services-all-link"
                 @click="servicesOpen = false"
               >
-                {{ locale === "et" ? "KÕIK TEENUSED" : "ALL SERVICES" }}
+                {{ t("nav.allServices") }}
               </NuxtLink>
 
               <NuxtLink
@@ -92,7 +92,7 @@ import { computed, ref, onMounted, onBeforeUnmount } from "vue";
 import PrimastellaTitle from "~/components/PrimastellaTitle.vue";
 import { services } from "~/data/services";
 
-const { t, locale, setLocale } = useLocale();
+const { t, locale } = useLocale();
 const servicesOpen = ref(false);
 const servicesMenuRef = ref(null);
 
@@ -131,44 +131,28 @@ onBeforeUnmount(() => {
 });
 
 function changeLocale(lang) {
-  setLocale(lang);
+  if (!process.client) return;
 
-  if (process.client) {
-    sessionStorage.setItem("primastella-locale", lang);
+  const currentPath = window.location.pathname;
+  const currentHash = window.location.hash;
 
-    const currentPath = window.location.pathname;
-    const currentHash = window.location.hash;
+  const matchedService = services.find((item) => {
+    return currentPath === item.pathEt || currentPath === item.pathEn;
+  });
 
-    const matchedService = services.find((item) => {
-      return currentPath === item.pathEt || currentPath === item.pathEn;
-    });
+  let targetPath = lang === "en" ? "/en" : "/";
 
-    if (matchedService) {
-      const targetPath =
-        lang === "en" ? matchedService.pathEn : matchedService.pathEt;
-      window.location.href = targetPath;
-      return;
-    }
-
-    if (currentHash === "#services") {
-      window.location.href = lang === "en" ? "/en#services" : "/#services";
-      return;
-    }
-
-    if (currentHash === "#contact") {
-      window.location.href = lang === "en" ? "/en#contact" : "/#contact";
-      return;
-    }
-
-    const isEnglishHome = currentPath === "/en";
-    const isEstonianHome = currentPath === "/";
-
-    if (isEnglishHome || isEstonianHome) {
-      window.location.href = lang === "en" ? "/en" : "/";
-      return;
-    }
-
-    window.location.href = lang === "en" ? "/en" : "/";
+  if (matchedService) {
+    targetPath = lang === "en" ? matchedService.pathEn : matchedService.pathEt;
+  } else if (currentHash === "#services") {
+    targetPath = lang === "en" ? "/en#services" : "/#services";
+  } else if (currentHash === "#contact") {
+    targetPath = lang === "en" ? "/en#contact" : "/#contact";
+  } else if (currentPath === "/en" || currentPath === "/") {
+    targetPath = lang === "en" ? "/en" : "/";
   }
+
+  sessionStorage.setItem("primastella-locale", lang);
+  window.location.href = targetPath;
 }
 </script>

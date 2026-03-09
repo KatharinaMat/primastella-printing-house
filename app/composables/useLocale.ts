@@ -7,7 +7,11 @@ const messages = {
 };
 
 export const useLocale = () => {
-  const locale = useState<"et" | "en">("locale", () => "et");
+  const route = useRoute();
+
+  const locale = computed<"et" | "en">(() => {
+    return route.path.startsWith("/en") ? "en" : "et";
+  });
 
   const t = (path: string) => {
     const keys = path.split(".");
@@ -21,7 +25,9 @@ export const useLocale = () => {
   };
 
   const setLocale = (lang: "et" | "en") => {
-    locale.value = lang;
+    if (process.client) {
+      sessionStorage.setItem("primastella-locale", lang);
+    }
   };
 
   return { locale, t, setLocale };

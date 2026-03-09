@@ -67,12 +67,15 @@
     gap: 3rem;
   }
 
-  .service-text {
-    flex: 1;
+  .service-gallery {
+    margin-top: 3rem;
   }
 
-  .service-gallery-placeholder {
-    flex: 1;
-    min-height: 280px;
+  .service-text {
+    flex: 1.15;
+  }
+
+  .service-content > :last-child {
+    flex: 0.7;
   }
 }
