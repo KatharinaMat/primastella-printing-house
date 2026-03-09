@@ -228,8 +228,16 @@
    SERVICES DROPDOWN 
    ================================= */
 
-.services-menu {
+/* =================================
+   SERVICES DROPDOWN
+   ================================= */
+
+.section-hero-controls {
   position: relative;
+}
+
+.services-menu {
+  position: static;
   display: inline-flex;
   align-items: center;
 }
