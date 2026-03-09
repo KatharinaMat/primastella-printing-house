@@ -42,7 +42,16 @@
               aria-controls="services-accordion"
               @click="toggleServices"
             >
-              {{ t("nav.services") }}
+              <span class="services-label">
+                {{ t("nav.services") }}
+              </span>
+              <span
+                class="services-arrow"
+                :class="{ open: servicesOpen }"
+                aria-hidden="true"
+              >
+                ▾
+              </span>
             </button>
 
             <div
