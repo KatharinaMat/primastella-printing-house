@@ -1,13 +1,13 @@
 <template>
-  <section class="service-page">
-    <div class="container">
-      <h1>Visiitkaardid</h1>
-
-      <p>
-        Kohandatud ja kvaliteetsed visiitkaardid ettevõtetele ja eraisikutele.
-      </p>
-
-      <NuxtLink to="/" class="back-link"> ← Tagasi avalehele </NuxtLink>
-    </div>
-  </section>
+  <main class="service-page">
+    <h1>Business Cards</h1>
+    <p>This page is currently under construction.</p>
+  </main>
 </template>
+
+<style scoped>
+.service-page {
+  padding: 2rem 1rem;
+  color: #1a1a1a;
+}
+</style>

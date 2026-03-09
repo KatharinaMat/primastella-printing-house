@@ -1,13 +1,12 @@
 <template>
-  <section class="service-page">
-    <div class="container">
+  <div>
+    <ServicesHero />
+
+    <main style="padding: 2rem 1rem; color: #1a1a1a">
       <h1>Visiitkaardid</h1>
+      <p>See leht on hetkel loomisel.</p>
+    </main>
 
-      <p>
-        Kohandatud ja kvaliteetsed visiitkaardid ettevõtetele ja eraisikutele.
-      </p>
-
-      <NuxtLink to="/" class="back-link"> ← Tagasi avalehele </NuxtLink>
-    </div>
-  </section>
+    <Footer />
+  </div>
 </template>
