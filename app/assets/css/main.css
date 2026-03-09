@@ -4,6 +4,7 @@
 @import "./contact.css";
 @import "./services.css";
 @import "./servicesHero.css";
+@import "./service-page.css";
 /* =================================
    LANG BUTTONS
    ================================= */
@@ -86,7 +87,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #2b2b2b;
+  color: var(--color-text-black);
 
   margin-bottom: 18px;
 }

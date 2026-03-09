@@ -76,5 +76,14 @@
     "mapConsent": "Kaardi kuvamiseks nõustu küpsistega allolevas teates.",
     "cookieText": "See veebileht kasutab Google Mapsi, mis võib seada Google'i hallatavaid küpsiseid.",
     "cookieButton": "OK"
+  },
+
+  "servicePages": {
+    "businessCards": {
+      "title": "Visiitkaardid",
+      "intro": "Visiitkaardid on ettevõtte visuaalse identiteedi oluline osa ja abivahend enda või oma ettevõtte tutvustamiseks. Pakume erineva suuruse, paberi ja viimistlusega visiitkaarte – matt, läikiv, lamineeritud või ümardatud nurkadega variandid.",
+      "text1": "Primastella trükikoda Tallinnas aitab ka kujunduse loomisel, et visiitkaart peegeldaks teie brändi professionaalselt ja stiilselt. Kõik visiitkaardid trükitakse kvaliteetsel Colotech 300 gsm valgel matil paberil.",
+      "text2": "Tellimused teostatakse kiiresti ja täpselt – kvaliteetne visiitkaart loob esmamulje, mis jääb meelde."
+    }
   }
 }
