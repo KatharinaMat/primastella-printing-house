@@ -5,5 +5,5 @@
 <script setup>
 const { setLocale } = useLocale();
 
-setLocale("et");
+setLocale("en");
 </script>
