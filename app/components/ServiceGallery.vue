@@ -6,13 +6,21 @@
     @touchstart="onTouchStart"
     @touchend="onTouchEnd"
   >
-    <div class="service-gallery-frame">
+    <div
+      class="service-gallery-frame"
+      :class="{
+        'gallery-frame-contain': mode === 'contain',
+      }"
+    >
       <transition name="gallery-fade" mode="out-in">
         <img
           :key="currentImage.src"
           :src="currentImage.src"
           :alt="currentImage.alt"
           class="service-gallery-image"
+          :class="{
+            'gallery-frame-contain': mode === 'contain',
+          }"
         />
       </transition>
 
@@ -60,6 +68,10 @@ const props = defineProps({
   intervalMs: {
     type: Number,
     default: 5000,
+  },
+  mode: {
+    type: String,
+    default: "cover",
   },
 });
 
@@ -171,6 +183,18 @@ onBeforeUnmount(() => {
   height: 100%;
   display: block;
   object-fit: cover;
+}
+
+/* contain mode: best for documents, forms, detailed layouts */
+.gallery-image-contain {
+  object-fit: contain;
+  background: #f3f3f3;
+}
+
+/* optional frame adjustments for contain mode */
+.gallery-frame-contain {
+  background: #d9d9d9;
+  aspect-ratio: 4 / 3;
 }
 
 .gallery-arrow {

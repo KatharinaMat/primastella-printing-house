@@ -22,35 +22,35 @@
     "items": {
       "forms": {
         "title": "Isekopeeruvad blanketid",
-        "description": "Dubleeritud blankettide lahendused."
+        "description": "Dubleeritud blankettide lahendused"
       },
       "businessCards": {
         "title": "Visiitkaardid",
-        "description": "Kohandatud ja kvaliteetsed visiitkaardid."
+        "description": "Kohandatud ja kvaliteetsed visiitkaardid"
       },
       "flyers": {
         "title": "Flaierid",
-        "description": "Reklaamlehed üritusteks."
+        "description": "Reklaamlehed üritusteks"
       },
       "brochures": {
         "title": "Voldikud",
-        "description": "Professionaalsed voldikud esitlusteks või juhenditeks."
+        "description": "Professionaalsed voldikud esitlusteks või juhenditeks"
       },
       "stickers": {
         "title": "Kleebised",
-        "description": "Kleebised brändimiseks ja pakenditele."
+        "description": "Kleebised brändimiseks ja pakenditele"
       },
       "calendars": {
         "title": "Kalendrid",
-        "description": "Kohandatud kalendrid äri- ja isiklikuks kasutuseks."
+        "description": "Kohandatud kalendrid äri- ja isiklikuks kasutuseks"
       },
       "posters": {
         "title": "Plakatid ja laiformaattrükk",
-        "description": "Suureformaadilised trükised ja plakatid."
+        "description": "Suureformaadilised trükised ja plakatid"
       },
       "envelopes": {
         "title": "Ümbrikud",
-        "description": "Kvaliteetsed ümbrikud teie saadetistele."
+        "description": "Kvaliteetsed ümbrikud teie saadetistele"
       }
     }
   },
@@ -85,6 +85,14 @@
       "intro": "Visiitkaardid on ettevõtte visuaalse identiteedi oluline osa ja abivahend enda või oma ettevõtte tutvustamiseks. Pakume erineva suuruse, paberi ja viimistlusega visiitkaarte – <strong>matt, läikiv, lamineeritud</strong> või <strong>ümardatud nurkadega</strong> variandid.",
       "text1": "Primastella trükikoda Tallinnas aitab ka kujunduse loomisel, et visiitkaart peegeldaks teie brändi professionaalselt ja stiilselt. Kõik visiitkaardid trükitakse kvaliteetsel <strong>Colotech 300 gsm</strong> valgel matil paberil.",
       "text2": "Tellimused teostatakse kiiresti ja täpselt – kvaliteetne visiitkaart loob esmamulje, mis jääb meelde."
+    },
+
+    "forms": {
+      "title": "Isekopeeruvad blanketid",
+      "intro": "Isekopeeruvad blanketid on mugav ja professionaalne lahendus dokumentide, tellimuste, arvetega või töölehtedega seotud paberimajanduseks. Need võimaldavad kiiresti teha koopiaid ilma koopiamasina või printerita.",
+      "text1": "Trükime isekopeeruvaid blankette formaatides A6, A65, A5 ja A4. Saadaval on komplektid 2-, 3- või 4-leheküljelised vastavalt vajadusele.",
+      "text2": "Esimene leht on valge, järgmised lehed võivad olla kollased, helepunased, helesinised või helerohelised. Soovi korral on võimalik lisada ka lehtede numereerimine, et muuta dokumentide haldamine lihtsamaks ja täpsemaks.",
+      "text3": "Primastella trükikoda tagab kvaliteetse trüki, korrektsed värvid ja kiire teostuse."
     }
   }
 }

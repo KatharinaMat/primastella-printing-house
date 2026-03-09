@@ -22,35 +22,35 @@
     "items": {
       "forms": {
         "title": "NCR Forms",
-        "description": "Duplicate and self-copying business forms."
+        "description": "Duplicate and self-copying business forms"
       },
       "businessCards": {
         "title": "Business Cards",
-        "description": "Custom-designed, high-quality business cards."
+        "description": "Custom-designed, high-quality business cards"
       },
       "flyers": {
         "title": "Flyers",
-        "description": "Promotional leaflets and event posters."
+        "description": "Promotional leaflets and event posters"
       },
       "brochures": {
         "title": "Brochures",
-        "description": "Professional brochures for presentations or guides."
+        "description": "Professional brochures for presentations or guides"
       },
       "stickers": {
         "title": "Stickers",
-        "description": "Branding and packaging stickers."
+        "description": "Branding and packaging stickers"
       },
       "calendars": {
         "title": "Calendars",
-        "description": "Custom-made calendars for business or personal use."
+        "description": "Custom-made calendars for business or personal use"
       },
       "posters": {
         "title": "Posters & Large-format",
-        "description": "High-quality large-format prints and posters."
+        "description": "High-quality large-format prints and posters"
       },
       "envelopes": {
         "title": "Envelopes",
-        "description": "High-quality envelopes for your correspondence."
+        "description": "High-quality envelopes for your correspondence"
       }
     }
   },
@@ -85,6 +85,14 @@
       "intro": "Business cards are an essential part of your company’s visual identity and a practical way to introduce yourself or your brand. We offer various sizes, paper types, and finishes — <strong>matte, glossy, laminated</strong>, or <strong>rounded corners</strong>.",
       "text1": "Primastella Printing House in Tallinn can also help with design to ensure your card reflects your brand professionally and elegantly. All cards are printed on high-quality <strong>Colotech 300 gsm</strong> white matte paper.",
       "text2": "Orders are completed quickly and accurately — a quality business card creates a first impression that lasts."
+    },
+
+    "forms": {
+      "title": "NCR Forms",
+      "intro": "Carbonless forms are a convenient and professional solution for managing documents such as orders, invoices, and work sheets. They allow you to create instant copies without the need for a copier or printer.",
+      "text1": "We print carbonless forms in A6, A65, A5, and A4 formats. Available as 2-, 3-, or 4-part sets, depending on your needs.",
+      "text2": "The first sheet is white, while the following sheets can be yellow, light pink, light blue, or light green. Sequential numbering can also be added to make document handling easier and more accurate.",
+      "text3": "Primastella printing house ensures high-quality printing, accurate colours, and fast production."
     }
   }
 }
