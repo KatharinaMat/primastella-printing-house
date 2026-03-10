@@ -93,6 +93,14 @@
       "text1": "We print carbonless forms in A6, A65, A5, and A4 formats. Available as 2-, 3-, or 4-part sets, depending on your needs.",
       "text2": "The first sheet is white, while the following sheets can be yellow, light pink, light blue, or light green. Sequential numbering can also be added to make document handling easier and more accurate.",
       "text3": "Primastella printing house ensures high-quality printing, accurate colours, and fast production."
+    },
+
+    "flyers": {
+      "title": "Flyers",
+      "intro": "Flyers are an effective way to promote your products, services, or events.",
+      "text1": "High-quality colour printing ensures that your message stands out and leaves a professional impression.",
+      "text2": "We print flyers on glossy or matte coated paper with a thickness of 100–170 gsm.",
+      "text3": "Available formats include A7 (74×105 mm), A6 (105×148 mm), A5 (148×210 mm), A65 (99×210 mm), and A4 (210×297 mm)."
     }
   }
 }

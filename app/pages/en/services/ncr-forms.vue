@@ -27,23 +27,23 @@ const { t } = useLocale();
 const galleryImages = [
   {
     src: "/images/isekopeeruv_1.webp",
-    alt: "Isekopeeruv blankett 1",
+    alt: "Isekopeeruv blankett",
   },
   {
-    src: "/images/isekopeeruv_2.webp",
+    src: "/images/isekopeeruv arvesaateleht.png",
+    alt: "Isekopeeruv arvesaateleht",
+  },
+  {
+    src: "/images/isekopeeruv_2.png",
     alt: "Isekopeeruv blankett 2",
   },
   {
-    src: "/images/isekopeeruv_3.webp",
+    src: "/images/isekopeeruv_3.png",
     alt: "Isekopeeruv blankett 3",
   },
   {
-    src: "/images/isekopeeruv_4.webp",
-    alt: "Isekopeeruv blankett 4",
-  },
-  {
-    src: "/images/isekopeeruv_5.webp",
-    alt: "Isekopeeruv blankett 5",
+    src: "/images/isikukontokaart.png",
+    alt: "Isikukontokaart",
   },
 ];
 </script>
