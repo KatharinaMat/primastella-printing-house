@@ -22,6 +22,45 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title:
+    "Kalendrid – Primastella trükikoda Tallinnas | Seinakalendrid ja reklaamkalendrid",
+
+  description:
+    "Primastella trükikoda Tallinnas valmistab kvaliteetseid seinakalendreid – üheosaline, kolmeosaline ja reklaamribaga kalender. Kujundame kalendrid vastavalt teie ettevõtte brändile.",
+
+  ogTitle: "Kalendrid – Primastella trükikoda Tallinnas",
+
+  ogDescription:
+    "Seinakalendrid erinevates formaatides, sh kolmeosaline ja reklaamribaga lahendused. Kujundus ja trükk.",
+
+  ogType: "website",
+  ogUrl: "https://primastella.ee/kalendrid",
+
+  ogLocale: "et_EE",
+});
+
+useHead({
+  link: [
+    { rel: "canonical", href: "https://primastella.ee/kalendrid" },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/kalendrid",
+      hreflang: "et",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/en/calendars",
+      hreflang: "en",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/kalendrid",
+      hreflang: "x-default",
+    },
+  ],
+});
+
 const { t } = useLocale();
 
 const galleryImages = [

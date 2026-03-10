@@ -20,6 +20,45 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title:
+    "Business cards – Primastella printing house in Tallinn | Design and printing",
+
+  description:
+    "Primastella printing house in Tallinn offers high-quality business card design and printing. Choose from matte, glossy, laminated and specialty finishes with fast turnaround.",
+
+  ogTitle: "Business cards – Primastella printing house in Tallinn",
+
+  ogDescription:
+    "High-quality business cards: matte, glossy, laminated and special finishes. Fast and reliable printing service.",
+
+  ogType: "website",
+  ogUrl: "https://primastella.ee/en/business-cards",
+
+  ogLocale: "en_US",
+});
+
+useHead({
+  link: [
+    { rel: "canonical", href: "https://primastella.ee/en/business-cards" },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/visiitkaardid",
+      hreflang: "et",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/en/business-cards",
+      hreflang: "en",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/visiitkaardid",
+      hreflang: "x-default",
+    },
+  ],
+});
+
 const { t } = useLocale();
 
 const galleryImages = [

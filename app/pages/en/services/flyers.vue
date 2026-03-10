@@ -22,6 +22,44 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title: "Flyers – Primastella printing house in Tallinn | Design and printing",
+
+  description:
+    "Primastella printing house in Tallinn prints high-quality flyers and promotional leaflets on glossy or matte coated paper with weights from 100–170 gsm. Fast and professional service.",
+
+  ogTitle: "Flyers – Primastella printing house in Tallinn",
+
+  ogDescription:
+    "Flyer design and printing on glossy or matte coated paper 100–170 gsm. Fast turnaround.",
+
+  ogType: "website",
+  ogUrl: "https://primastella.ee/en/flyers",
+
+  ogLocale: "en_US",
+});
+
+useHead({
+  link: [
+    { rel: "canonical", href: "https://primastella.ee/en/flyers" },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/flaierid",
+      hreflang: "et",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/en/flyers",
+      hreflang: "en",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/flaierid",
+      hreflang: "x-default",
+    },
+  ],
+});
+
 const { t } = useLocale();
 
 const galleryImages = [

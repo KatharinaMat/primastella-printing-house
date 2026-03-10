@@ -22,6 +22,48 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title:
+    "Isekopeeruvad blanketid – Primastella trükikoda Tallinnas | Trükk ja kujundus",
+
+  description:
+    "Primastella trükikoda Tallinnas trükib kvaliteetseid isekopeeruvaid blankette formaatides A6, A65, A5 ja A4. Võimalik numereerimine ning 2–4-leheküljelised komplektid.",
+
+  ogTitle: "Isekopeeruvad blanketid – Primastella trükikoda Tallinnas",
+
+  ogDescription:
+    "Isekopeeruvad blanketid formaatides A6, A65, A5 ja A4. Võimalik numereerimine ja 2–4-leheküljelised komplektid.",
+
+  ogType: "website",
+  ogUrl: "https://primastella.ee/isekopeeruvad-blanketid",
+
+  ogLocale: "et_EE",
+});
+
+useHead({
+  link: [
+    {
+      rel: "canonical",
+      href: "https://primastella.ee/isekopeeruvad-blanketid",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/isekopeeruvad-blanketid",
+      hreflang: "et",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/en/ncr-forms",
+      hreflang: "en",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/isekopeeruvad-blanketid",
+      hreflang: "x-default",
+    },
+  ],
+});
+
 const { t } = useLocale();
 
 const galleryImages = [

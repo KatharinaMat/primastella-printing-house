@@ -20,6 +20,44 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title: "Visiitkaardid – Primastella trükikoda Tallinnas | Kujundus ja trükk",
+
+  description:
+    "Primastella trükikoda Tallinnas pakub kvaliteetset visiitkaartide kujundust ja trükki. Valikus matt, läikiv, lamineeritud ja eriviimistlusega visiitkaardid kiire teostusega.",
+
+  ogTitle: "Visiitkaardid – Primastella trükikoda Tallinnas",
+
+  ogDescription:
+    "Kvaliteetsed visiitkaardid: matt, läikiv, lamineeritud ja eriviimistlused. Kiire teostus.",
+
+  ogType: "website",
+  ogUrl: "https://primastella.ee/visiitkaardid",
+
+  ogLocale: "et_EE",
+});
+
+useHead({
+  link: [
+    { rel: "canonical", href: "https://primastella.ee/visiitkaardid" },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/visiitkaardid",
+      hreflang: "et",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/en/business-cards",
+      hreflang: "en",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/visiitkaardid",
+      hreflang: "x-default",
+    },
+  ],
+});
+
 const { t } = useLocale();
 
 const galleryImages = [

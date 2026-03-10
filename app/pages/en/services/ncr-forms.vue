@@ -22,6 +22,45 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title:
+    "NCR forms – Primastella printing house in Tallinn | Printing and design",
+
+  description:
+    "Primastella printing house in Tallinn produces high-quality NCR forms in A6, A65, A5 and A4 formats. Numbering available and sets of 2–4 sheets.",
+
+  ogTitle: "NCR forms – Primastella printing house in Tallinn",
+
+  ogDescription:
+    "NCR (carbonless) forms in A6, A65, A5 and A4 formats. Numbering and 2–4 sheet sets available.",
+
+  ogType: "website",
+  ogUrl: "https://primastella.ee/en/ncr-forms",
+
+  ogLocale: "en_US",
+});
+
+useHead({
+  link: [
+    { rel: "canonical", href: "https://primastella.ee/en/ncr-forms" },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/isekopeeruvad-blanketid",
+      hreflang: "et",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/en/ncr-forms",
+      hreflang: "en",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/isekopeeruvad-blanketid",
+      hreflang: "x-default",
+    },
+  ],
+});
+
 const { t } = useLocale();
 
 const galleryImages = [

@@ -21,6 +21,45 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title:
+    "Stickers – Primastella printing house in Tallinn | Paper and PVC stickers",
+
+  description:
+    "Primastella printing house in Tallinn produces high-quality paper and PVC stickers for indoor and outdoor use. Available in A3 and large-format printing.",
+
+  ogTitle: "Stickers – Primastella printing house in Tallinn",
+
+  ogDescription:
+    "Paper and PVC stickers for indoor and outdoor use. A3 and large-format printing with fast turnaround.",
+
+  ogType: "website",
+  ogUrl: "https://primastella.ee/en/stickers",
+
+  ogLocale: "en_US",
+});
+
+useHead({
+  link: [
+    { rel: "canonical", href: "https://primastella.ee/en/stickers" },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/kleebised",
+      hreflang: "et",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/en/stickers",
+      hreflang: "en",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/kleebised",
+      hreflang: "x-default",
+    },
+  ],
+});
+
 const { t } = useLocale();
 
 const galleryImages = [

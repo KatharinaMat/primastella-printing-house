@@ -21,6 +21,45 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title:
+    "Kleebised – Primastella trükikoda Tallinnas | Paber- ja PVC-kleebised",
+
+  description:
+    "Primastella trükikoda Tallinnas valmistab kvaliteetseid paber- ja PVC-kleebiseid. Sobivad sise- ja välitingimustesse ning saadaval A3 ja laiformaadis trükis.",
+
+  ogTitle: "Kleebised – Primastella trükikoda Tallinnas",
+
+  ogDescription:
+    "Paber- ja PVC-kleebised sise- ja välitingimustesse. A3 ning laiformaadis trükk kiire teostusega.",
+
+  ogType: "website",
+  ogUrl: "https://primastella.ee/kleebised",
+
+  ogLocale: "et_EE",
+});
+
+useHead({
+  link: [
+    { rel: "canonical", href: "https://primastella.ee/kleebised" },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/kleebised",
+      hreflang: "et",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/en/stickers",
+      hreflang: "en",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/kleebised",
+      hreflang: "x-default",
+    },
+  ],
+});
+
 const { t } = useLocale();
 
 const galleryImages = [

@@ -22,6 +22,44 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title: "Flaierid – Primastella trükikoda Tallinnas | Kujundus ja trükk",
+
+  description:
+    "Primastella trükikoda Tallinnas trükib kvaliteetseid flaierid ja reklaamlehti läikivale või matile kriitpaberile paksusega 100–170 gsm. Kiire ja professionaalne teenus.",
+
+  ogTitle: "Flaierid – Primastella trükikoda Tallinnas",
+
+  ogDescription:
+    "Flaierite kujundus ja trükk: läikiv või matt kriitpaber 100–170 gsm. Kiire teostus.",
+
+  ogType: "website",
+  ogUrl: "https://primastella.ee/flaierid",
+
+  ogLocale: "et_EE",
+});
+
+useHead({
+  link: [
+    { rel: "canonical", href: "https://primastella.ee/flaierid" },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/flaierid",
+      hreflang: "et",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/en/flyers",
+      hreflang: "en",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/flaierid",
+      hreflang: "x-default",
+    },
+  ],
+});
+
 const { t } = useLocale();
 
 const galleryImages = [

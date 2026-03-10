@@ -3,6 +3,17 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  ogImage: "https://primastella.ee/images/og-primastella.webp",
+  ogImageWidth: "1200",
+  ogImageHeight: "630",
+
+  ogSiteName: "Primastella",
+
+  twitterCard: "summary_large_image",
+  twitterImage: "https://primastella.ee/images/og-primastella.webp",
+});
+
 useHead({
   link: [
     { rel: "preconnect", href: "https://fonts.googleapis.com" },

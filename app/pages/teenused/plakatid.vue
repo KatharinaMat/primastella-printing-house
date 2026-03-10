@@ -23,6 +23,45 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title:
+    "Plakatid ja laiformaattrükk – Primastella trükikoda Tallinnas | Kujundus ja tootmine",
+
+  description:
+    "Primastella trükikoda Tallinnas trükib plakateid ja laiformaadis trükiseid nii sise- kui välitingimustesse. Lai valik materjale, viimistlusi ja mõõte alates A4-st kuni A0 ja erimõõtudeni.",
+
+  ogTitle: "Plakatid ja laiformaattrükk – Primastella trükikoda Tallinnas",
+
+  ogDescription:
+    "Plakatid A3–A0 ja erimõõtudes, siseruumidesse ja välitingimustesse. Lamineerimine, UV-tindid ja kvaliteetne laiformaattrükk.",
+
+  ogType: "website",
+  ogUrl: "https://primastella.ee/plakatid",
+
+  ogLocale: "et_EE",
+});
+
+useHead({
+  link: [
+    { rel: "canonical", href: "https://primastella.ee/plakatid" },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/plakatid",
+      hreflang: "et",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/en/posters",
+      hreflang: "en",
+    },
+    {
+      rel: "alternate",
+      href: "https://primastella.ee/plakatid",
+      hreflang: "x-default",
+    },
+  ],
+});
+
 const { t } = useLocale();
 
 const galleryImages = [
