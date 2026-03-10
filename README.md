@@ -1,75 +1,139 @@
-# Nuxt Minimal Starter
+Primastella Website (Nuxt Rebuild)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Modern rebuild of the Primastella printing house website using Nuxt and Vue.
 
-## Setup
+The goal of this project was to modernize the existing website architecture while preserving the brand identity and content of the original site.
 
-Make sure to install dependencies:
+Primastella is a small printing house in Tallinn offering services such as business cards, NCR forms, flyers, stickers, and calendars.
 
-```bash
-# npm
+Live Website
+
+https://primastella.ee
+
+Project Goals
+
+This project was created to improve the original website in several areas:
+
+modern frontend architecture
+
+better SEO structure
+
+reusable component system
+
+improved responsiveness
+
+optimized image handling
+
+easier maintainability for future updates
+
+Technologies Used
+
+Nuxt 3
+
+Vue 3
+
+JavaScript
+
+CSS
+
+WebP image optimization
+
+Open Graph / Twitter metadata
+
+i18n JSON localization
+
+Key Features
+Bilingual structure
+
+The site supports Estonian and English versions using separate locale JSON files.
+
+locales/
+  et.json
+  en.json
+Component-based layout
+
+Reusable components were created for:
+
+hero sections
+
+service pages
+
+galleries
+
+footer
+
+This makes it easy to extend the site with new services.
+
+SEO configuration
+
+The site includes structured metadata for better search and social previews:
+
+Open Graph metadata
+
+Twitter card previews
+
+canonical URLs
+
+hreflang language tags
+
+optimized preview image (1200×630)
+
+Image optimization
+
+Images were converted to WebP format to reduce file size and improve loading speed.
+
+Project Structure
+components/
+  ServiceHero.vue
+  ServiceGallery.vue
+  Footer.vue
+
+pages/
+  index.vue
+  en/index.vue
+  visiitkaardid.vue
+  ncr-forms.vue
+  ...
+
+public/
+  images/
+
+locales/
+  et.json
+  en.json
+Running the Project
+
+Install dependencies:
+
 npm install
 
-# pnpm
-pnpm install
+Run development server:
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
 
-# pnpm
-pnpm dev
+Build production version:
 
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
 npm run build
 
-# pnpm
-pnpm build
+Preview production build:
 
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
 npm run preview
+Deployment
 
-# pnpm
-pnpm preview
+The project can be deployed as a static build.
 
-# yarn
-yarn preview
+Typical hosting platforms:
 
-# bun
-bun run preview
-```
+Vercel
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Netlify
+
+static hosting on a custom domain
+
+Author
+
+Katharina Matkevits
+Software development student transitioning into the IT field.
+
+GitHub:
+https://github.com/KatharinaMat
