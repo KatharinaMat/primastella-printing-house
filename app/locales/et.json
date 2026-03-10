@@ -101,6 +101,45 @@
       "text1": "Värviline ja kvaliteetne trükk aitab sõnumil silma paista ning jätta professionaalse mulje.",
       "text2": "Trükime flaierid läikivale või matile kriitpaberile paksusega 100–170 gsm.",
       "text3": "Saadaval on erinevad formaadid vastavalt vajadusele: A7 (74×105 mm), A6 (105×148 mm), A5 (148×210 mm), A65 (99×210 mm) ja A4 (210×297 mm)."
+    },
+
+    "brochures": {
+      "title": "Voldikud",
+      "intro": "Voldik on üks või mitu korda kokku murtud reklaamleht – kompaktne ja tõhus viis toote või teenuse tutvustamiseks. Voldikuid kasutatakse sageli messidel, üritustel ja turundusmaterjalides.",
+      "text1": "Voldikud erinevad nii formaadi kui ka kokkumurdmiskohtade poolest. Trükime voldikuid enamasti 120–190 g paberile, tagades selge värviedastuse ja professionaalse tulemuse.",
+      "text2": "Soovi korral saab valida mati või läikiva paberi, sõltuvalt soovitud välimusest ja kasutusotstarbest. Järeltöötlusvõimalused: voltimine, nuutimine, lamineerimine ja lakkimine.",
+      "text3": "Levinumad voldiku tüübid on V-, Z- ja C-tüüpi voldikud."
+    },
+
+    "stickers": {
+      "title": "Kleebised",
+      "intro": "Kleebiseid valmistame kahel erineval masinal vastavalt soovitud kogusele ja eesmärgile.",
+      "text1": "Pakume eri tüüpi paberi- ja PVC-kleebiseid, mis sobivad nii sise- kui ka välitingimustesse.",
+      "text2": "Paberkleebised trükime A3 lehtedele, samas kui PVC-kleebised valmistatakse suurematele pindadele – sobivad hästi laiformaattrükiks, näiteks reklaamide või toodete märgistamiseks."
+    },
+
+    "calendars": {
+      "title": "Kalendrid",
+      "intro": "Pakume seinakalendreid erinevates mõõtudes ja kujundustes vastavalt teie vajadustele ja brändi stiilile. Kõik kalendrid on kvaliteetsed ja sobivad nii kontorisse kui ka kingituseks klientidele.",
+      "text1": "Valikus on erinevad variandid:",
+      "text2": "• Üheosaline seinakalender<br>• Kolmeosaline seinakalender<br>• Kolmeosaline seinakalender lisa reklaamiribaga<br>• Kolm ühes seinakalender",
+      "text3": "Kalendreid saab kohandada teie ettevõtte logo, värvide ja piltidega, et luua praktiline ja meeldejääv reklaamtoode."
+    },
+
+    "posters": {
+      "title": "Plakatid ja laiformaattrükk",
+      "intro": "Trükime plakateid ja laiformaadis trükiseid nii siseruumidesse kui ka välitingimustesse. Valida saab eri materjalide, viimistluste ja mõõtude vahel – alates A4-st kuni A0 ja erimõõtudeni. Vajadusel aitame kujundusega, et tulemus oleks brändiga kooskõlas ja tähelepanu püüdev.",
+      "text1": "Levinud materjalid: paber 130-200g, PVC vinüül (sh kleebisvinüül), kangas (bänner), PVC plaat/kapaplaat, roll-up bännerite materjal.",
+      "text2": "Viimistlus: matt või läikiv laminaat, paigaldusteip.",
+      "text3": "Kasutus: kampaaniaplakatid, ürituste posterid, vitriini- ja kauplusegraafika, messistendid, suunaviidad, siseviidad.",
+      "text4": "Faili ettevalmistus: CMYK, resolutsioon 150–300 dpi, bleed 3–5 mm, tekstid kontuuriks."
+    },
+
+    "envelopes": {
+      "title": "Ümbrikud",
+      "intro": "Ümbrikud ettevõtte embleemi ja kontaktinfoga on oluline osa professionaalsest kirjavahetusest. Need loovad esmamulje, mis kannab edasi teie brändi väärtusi ja usaldusväärsust.",
+      "text1": "Trükime teie logo, kontaktandmed või muu teabe standardsetele valgetele ümbrikele — C65, C5 ja C4 suuruses. Soovi korral aitame ka kujundusega, et ümbrik sobituks ülejäänud ettevõtte visuaaliga.",
+      "text2": "Minimaalne tellimiskogus on 100 tükki. Primastella trükikoda tagab kvaliteetse trüki ja kiire teostuse."
     }
   }
 }

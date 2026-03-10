@@ -13,7 +13,7 @@
           <p v-html="t('servicePages.flyers.text3')"></p>
         </div>
 
-        <ServiceGallery :images="galleryImages" mode="contain" />
+        <ServiceGallery :images="galleryImages" mode="poster" />
       </section>
     </main>
 

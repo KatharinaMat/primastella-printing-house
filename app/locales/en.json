@@ -101,6 +101,44 @@
       "text1": "High-quality colour printing ensures that your message stands out and leaves a professional impression.",
       "text2": "We print flyers on glossy or matte coated paper with a thickness of 100–170 gsm.",
       "text3": "Available formats include A7 (74×105 mm), A6 (105×148 mm), A5 (148×210 mm), A65 (99×210 mm), and A4 (210×297 mm)."
+    },
+
+    "brochures": {
+      "title": "Brochures",
+      "intro": "A brochure is a folded leaflet – a compact and effective way to present your product or service. Brochures are commonly used at fairs, events, and in marketing materials.",
+      "text1": "They vary in size and number of folds. We usually print brochures on 120–190 g paper, ensuring vivid colors and a professional finish.",
+      "text2": "You can choose between matte or glossy paper, depending on the desired appearance and purpose. Finishing options include folding, creasing, lamination, and varnishing.",
+      "text3": "The most common types of folds are V-fold, Z-fold, and C-fold brochures."
+    },
+    "stickers": {
+      "title": "Stickers",
+      "intro": "We produce stickers using two different printing machines, depending on the desired quantity and purpose.",
+      "text1": "We offer various types of paper and PVC stickers suitable for both indoor and outdoor use.",
+      "text2": "Paper stickers are printed on A3 sheets, while PVC stickers are made in larger formats (ideal for wide-format printing such as advertisements or product labeling)."
+    },
+
+    "calendars": {
+      "title": "Calendars",
+      "intro": "We offer wall calendars in various sizes and designs to suit your needs and brand style. All calendars are produced with high quality and are perfect for office use or as gifts for clients.",
+      "text1": "Available options:",
+      "text2": "• One-part wall calendar<br>• Three-part wall calendar<br>• Three-part wall calendar with an additional advertising strip<br>• Three-in-one wall calendar",
+      "text3": "Calendars can be customized with your company logo, colors, and images, creating a practical and memorable promotional product."
+    },
+
+    "posters": {
+      "title": "Posters and Large Format Printing",
+      "intro": "We print posters and large-format materials for both indoor and outdoor use. You can choose from a variety of materials, finishes, and sizes – from A4 up to A0 and custom dimensions. If needed, we can assist with design to ensure the final result aligns with your brand and captures attention.",
+      "text1": "Common materials: 130–200 g paper, PVC vinyl (including adhesive vinyl), fabric (banner), PVC board/foam board, roll-up banner material.",
+      "text2": "Finishing options: matte or glossy lamination, mounting tape.",
+      "text3": "Applications: campaign posters, event graphics, shop window and retail graphics, exhibition stands, directional and indoor signs.",
+      "text4": "File preparation: CMYK color mode, resolution 150–300 dpi, bleed 3–5 mm, text converted to outlines."
+    },
+
+    "envelopes": {
+      "title": "Envelopes",
+      "intro": "Envelopes with your company logo and contact details are an important part of professional correspondence. They help create a strong first impression that reflects your brand’s values and reliability.",
+      "text1": "We print your logo, contact information, or other details on standard white envelopes — available in C65, C5, and C4 sizes. If needed, we can also assist with design to ensure your envelopes match your company’s visual identity.",
+      "text2": "The minimum order quantity is 100 pieces."
     }
   }
 }

@@ -1,13 +1,31 @@
 <template>
-  <section class="service-page">
-    <div class="container">
-      <h1>Visiitkaardid</h1>
+  <div>
+    <ServicesHero />
 
-      <p>
-        Kohandatud ja kvaliteetsed visiitkaardid ettevõtetele ja eraisikutele.
-      </p>
+    <main class="service-page">
+      <section class="service-content">
+        <div class="service-text">
+          <h1>{{ t("servicePages.envelopes.title") }}</h1>
 
-      <NuxtLink to="/" class="back-link"> ← Tagasi avalehele </NuxtLink>
-    </div>
-  </section>
+          <p>{{ t("servicePages.envelopes.intro") }}</p>
+          <p>{{ t("servicePages.envelopes.text1") }}</p>
+          <p>{{ t("servicePages.envelopes.text2") }}</p>
+        </div>
+        <ServiceGallery :images="galleryImages" />
+      </section>
+    </main>
+
+    <Footer />
+  </div>
 </template>
+
+<script setup>
+const { t } = useLocale();
+
+const galleryImages = [
+  {
+    src: "/images/naidis_umbrik.jpg",
+    alt: "Envelope 1",
+  },
+];
+</script>
