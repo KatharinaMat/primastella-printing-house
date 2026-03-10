@@ -7,9 +7,9 @@
         <div class="service-text">
           <h1>{{ t("servicePages.businessCards.title") }}</h1>
 
-          <p>{{ t("servicePages.businessCards.intro") }}</p>
-          <p>{{ t("servicePages.businessCards.text1") }}</p>
-          <p>{{ t("servicePages.businessCards.text2") }}</p>
+          <p v-html="t('servicePages.businessCards.intro')"></p>
+          <p v-html="t('servicePages.businessCards.text1')"></p>
+          <p v-html="t('servicePages.businessCards.text2')"></p>
         </div>
         <ServiceGallery :images="galleryImages" />
       </section>
