@@ -10,6 +10,7 @@
       class="service-gallery-frame"
       :class="{
         'gallery-frame-contain': mode === 'contain',
+        'gallery-frame-poster': mode === 'poster',
       }"
     >
       <transition name="gallery-fade" mode="out-in">
@@ -19,8 +20,11 @@
           :alt="currentImage.alt"
           class="service-gallery-image"
           :class="{
-            'gallery-frame-contain': mode === 'contain',
+            'gallery-image-contain': mode === 'contain',
+            'gallery-image-poster': mode === 'poster',
+            'gallery-image-clickable': true,
           }"
+          @click="openModal"
         />
       </transition>
 
@@ -54,6 +58,58 @@
         @click="goToSlide(index)"
       ></button>
     </div>
+
+    <p v-if="mode === 'contain' || mode === 'poster'" class="gallery-hint">
+      Click image to enlarge
+    </p>
+
+    <transition name="modal-fade">
+      <div
+        v-if="isModalOpen"
+        class="gallery-modal"
+        role="dialog"
+        aria-modal="true"
+        :aria-label="currentImage.alt || 'Enlarged gallery image'"
+        @click.self="closeModal"
+      >
+        <button
+          type="button"
+          class="gallery-modal-close"
+          aria-label="Close enlarged image"
+          @click="closeModal"
+        >
+          ×
+        </button>
+
+        <button
+          v-if="images.length > 1"
+          type="button"
+          class="gallery-modal-arrow gallery-modal-arrow-left"
+          aria-label="Previous image"
+          @click.stop="prevSlide"
+        >
+          ‹
+        </button>
+
+        <div class="gallery-modal-content">
+          <img
+            :src="currentImage.src"
+            :alt="currentImage.alt"
+            class="gallery-modal-image"
+          />
+        </div>
+
+        <button
+          v-if="images.length > 1"
+          type="button"
+          class="gallery-modal-arrow gallery-modal-arrow-right"
+          aria-label="Next image"
+          @click.stop="nextSlide"
+        >
+          ›
+        </button>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -77,6 +133,7 @@ const props = defineProps({
 
 const currentIndex = ref(0);
 const isPaused = ref(false);
+const isModalOpen = ref(false);
 const touchStartX = ref(0);
 let autoplayTimer = null;
 
@@ -102,7 +159,7 @@ function goToSlide(index) {
 function startAutoplay() {
   stopAutoplay();
 
-  if (props.images.length <= 1 || isPaused.value) return;
+  if (props.images.length <= 1 || isPaused.value || isModalOpen.value) return;
 
   autoplayTimer = setInterval(() => {
     nextSlide();
@@ -143,6 +200,34 @@ function onTouchEnd(event) {
   }
 }
 
+function openModal() {
+  isModalOpen.value = true;
+  stopAutoplay();
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal() {
+  isModalOpen.value = false;
+  document.body.style.overflow = "";
+  startAutoplay();
+}
+
+function handleKeydown(event) {
+  if (!isModalOpen.value) return;
+
+  if (event.key === "Escape") {
+    closeModal();
+  }
+
+  if (event.key === "ArrowRight") {
+    nextSlide();
+  }
+
+  if (event.key === "ArrowLeft") {
+    prevSlide();
+  }
+}
+
 watch(
   () => props.images,
   () => {
@@ -154,10 +239,13 @@ watch(
 
 onMounted(() => {
   startAutoplay();
+  window.addEventListener("keydown", handleKeydown);
 });
 
 onBeforeUnmount(() => {
   stopAutoplay();
+  window.removeEventListener("keydown", handleKeydown);
+  document.body.style.overflow = "";
 });
 </script>
 
@@ -185,16 +273,30 @@ onBeforeUnmount(() => {
   object-fit: cover;
 }
 
-/* contain mode: best for documents, forms, detailed layouts */
-.gallery-image-contain {
-  object-fit: contain;
-  background: #f3f3f3;
+.gallery-image-clickable {
+  cursor: zoom-in;
 }
 
-/* optional frame adjustments for contain mode */
+.gallery-image-contain {
+  object-fit: contain;
+  background: #d8d5d5;
+}
+
 .gallery-frame-contain {
-  background: #d9d9d9;
+  background: #e3e5e6;
   aspect-ratio: 4 / 3;
+}
+
+/* future poster mode */
+.gallery-image-poster {
+  object-fit: contain;
+  background: #ececec;
+}
+
+.gallery-frame-poster {
+  background: #e3e5e6;
+  aspect-ratio: 3 / 4;
+  max-width: 420px;
 }
 
 .gallery-arrow {
@@ -258,6 +360,90 @@ onBeforeUnmount(() => {
   transform: scale(1.15);
 }
 
+.gallery-hint {
+  margin-top: 0.65rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(26, 26, 26, 0.68);
+}
+
+.gallery-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+  background: rgba(20, 24, 28, 0.82);
+  backdrop-filter: blur(4px);
+}
+
+.gallery-modal-content {
+  max-width: min(92vw, 1100px);
+  max-height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-modal-image {
+  max-width: 100%;
+  max-height: 88vh;
+  display: block;
+  border-radius: 12px;
+  background: #f4f4f4;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+}
+
+.gallery-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.92);
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.gallery-modal-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 2.75rem;
+  height: 2.75rem;
+  border: none;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--color-teal);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.gallery-modal-arrow-left {
+  left: 1rem;
+}
+
+.gallery-modal-arrow-right {
+  right: 1rem;
+}
+
 .gallery-fade-enter-active,
 .gallery-fade-leave-active {
   transition: opacity 0.35s ease;
@@ -265,6 +451,16 @@ onBeforeUnmount(() => {
 
 .gallery-fade-enter-from,
 .gallery-fade-leave-to {
+  opacity: 0;
+}
+
+.modal-fade-enter-active,
+.modal-fade-leave-active {
+  transition: opacity 0.25s ease;
+}
+
+.modal-fade-enter-from,
+.modal-fade-leave-to {
   opacity: 0;
 }
 
@@ -279,12 +475,47 @@ onBeforeUnmount(() => {
     pointer-events: auto;
   }
 
-  .gallery-arrow:hover {
-    background: rgba(248, 246, 242, 0.96);
+  .gallery-arrow:hover,
+  .gallery-modal-arrow:hover,
+  .gallery-modal-close:hover {
+    background: rgba(255, 255, 255, 0.98);
   }
 
   .gallery-dot:hover {
     transform: scale(1.12);
+  }
+
+  .gallery-image-clickable:hover {
+    transform: scale(1.01);
+    transition: transform 0.2s ease;
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-modal {
+    padding: 0.75rem;
+  }
+
+  .gallery-modal-content {
+    max-width: 100%;
+  }
+
+  .gallery-modal-arrow {
+    width: 2.35rem;
+    height: 2.35rem;
+  }
+
+  .gallery-modal-arrow-left {
+    left: 0.5rem;
+  }
+
+  .gallery-modal-arrow-right {
+    right: 0.5rem;
+  }
+
+  .gallery-modal-close {
+    top: 0.75rem;
+    right: 0.75rem;
   }
 }
 </style>
