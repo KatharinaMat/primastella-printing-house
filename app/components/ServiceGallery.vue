@@ -59,10 +59,6 @@
       ></button>
     </div>
 
-    <p v-if="mode === 'contain' || mode === 'poster'" class="gallery-hint">
-      Click image to enlarge
-    </p>
-
     <transition name="modal-fade">
       <div
         v-if="isModalOpen"

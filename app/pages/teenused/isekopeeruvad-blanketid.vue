@@ -30,7 +30,7 @@ const galleryImages = [
     alt: "Isekopeeruv blankett",
   },
   {
-    src: "/images/isekopeeruv arvesaateleht.png",
+    src: "/images/isekopeeruv_arvesaateleht.png",
     alt: "Isekopeeruv arvesaateleht",
   },
   {
