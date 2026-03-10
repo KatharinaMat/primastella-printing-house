@@ -1,4 +1,4 @@
-Primastella Website (Nuxt Rebuild)
+**Primastella Website (Nuxt Rebuild)**
 
 Modern rebuild of the Primastella printing house website using Nuxt and Vue.
 
@@ -6,46 +6,32 @@ The goal of this project was to modernize the existing website architecture whil
 
 Primastella is a small printing house in Tallinn offering services such as business cards, NCR forms, flyers, stickers, and calendars.
 
-Live Website
+**Live Website:**
 
 https://primastella.ee
 
-Project Goals
+**Project Goals**
 
 This project was created to improve the original website in several areas:
 
-modern frontend architecture
+-modern frontend architecture
+-better SEO structure
+-reusable component system
+-improved responsiveness
+-optimized image handling
+-easier maintainability for future updates
 
-better SEO structure
+**Technologies Used**
+- Nuxt 4
+- Vue 3
+- JavaScript
+- CSS
+- WebP image optimization
+- Open Graph / Twitter metadata
+- i18n JSON localization
 
-reusable component system
-
-improved responsiveness
-
-optimized image handling
-
-easier maintainability for future updates
-
-Technologies Used
-
-Nuxt 3
-
-Vue 3
-
-JavaScript
-
-CSS
-
-WebP image optimization
-
-Open Graph / Twitter metadata
-
-i18n JSON localization
-
-Key Features
-Bilingual structure
-
-The site supports Estonian and English versions using separate locale JSON files.
+**Key Features**
+Bilingual structure: the site supports Estonian and English versions using separate locale JSON files.
 
 locales/
   et.json
@@ -54,86 +40,60 @@ Component-based layout
 
 Reusable components were created for:
 
-hero sections
-
-service pages
-
-galleries
-
-footer
+-hero sections
+-service pages
+-galleries
+-footer
 
 This makes it easy to extend the site with new services.
 
-SEO configuration
+**SEO configuration**
 
 The site includes structured metadata for better search and social previews:
 
-Open Graph metadata
+- Open Graph metadata
+- Twitter card previews
+- canonical URLs
+- hreflang language tags
+- optimized preview image (1200×630)
 
-Twitter card previews
 
-canonical URLs
-
-hreflang language tags
-
-optimized preview image (1200×630)
-
-Image optimization
-
-Images were converted to WebP format to reduce file size and improve loading speed.
-
-Project Structure
-components/
-  ServiceHero.vue
-  ServiceGallery.vue
-  Footer.vue
-
-pages/
-  index.vue
-  en/index.vue
-  visiitkaardid.vue
-  ncr-forms.vue
-  ...
-
-public/
-  images/
-
-locales/
-  et.json
-  en.json
-Running the Project
+**Project Structure**
+primastella-printing-house/
+├─ app/
+│  ├─ components/
+│  ├─ pages/
+│  ├─ locales/
+│  └─ assets/
+├─ public/
+├─ nuxt.config.ts
+├─ tsconfig.json
+├─ package.json
+└─ README.md
+  
+**Running the Project**
 
 Install dependencies:
 
 npm install
-
 Run development server:
-
 npm run dev
-
 Build production version:
-
 npm run build
-
 Preview production build:
-
 npm run preview
-Deployment
 
+**Deployment**
 The project can be deployed as a static build.
 
-Typical hosting platforms:
-
+**Typical hosting platforms:**
 Vercel
-
 Netlify
-
 static hosting on a custom domain
 
-Author
-
+**Author**
 Katharina Matkevits
-Software development student transitioning into the IT field.
+
 
 GitHub:
 https://github.com/KatharinaMat
