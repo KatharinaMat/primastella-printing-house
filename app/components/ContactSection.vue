@@ -25,6 +25,7 @@
           autocomplete="name"
           required
           v-model="form.name"
+          :class="{ 'input-error': statusMessage && !form.name.trim() }"
         />
 
         <!-- Email -->
@@ -40,19 +41,20 @@
           autocomplete="email"
           required
           v-model="form.email"
-        />
+          :class="{ 'input-error': statusMessage && !form.email.trim() }"
+        />>
 
         <!-- Message -->
         <label for="message" class="visually-hidden">
           {{ t("contact.message") }}
         </label>
-
         <textarea
           id="message"
           name="message"
           :placeholder="t('contact.message')"
           required
           v-model="form.message"
+          :class="{ 'input-error': statusMessage && !form.message.trim() }"
         ></textarea>
 
         <!-- hidden subject -->
@@ -95,9 +97,28 @@ const form = reactive({
 const statusMessage = ref("");
 
 async function handleSubmit(e) {
+  const name = form.name.trim();
+  const email = form.email.trim();
+  const message = form.message.trim();
+
+  if (!name || !email || !message) {
+    statusMessage.value = t("contact.required");
+    return;
+  }
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailPattern.test(email)) {
+    statusMessage.value = t("contact.invalidEmail");
+    return;
+  }
+
   statusMessage.value = t("contact.sending");
 
   const formData = new FormData(e.target);
+  formData.set("name", name);
+  formData.set("email", email);
+  formData.set("message", message);
 
   try {
     const res = await fetch(e.target.action, {

@@ -63,7 +63,9 @@
     "send": "Send message",
     "sending": "Sending…",
     "success": "Thank you! Your message has been sent.",
-    "error": "Sending failed. Please try again."
+    "error": "Sending failed. Please try again.",
+    "required": "Please fill in all fields before sending.",
+    "invalidEmail": "Please enter a valid email address."
   },
 
   "footer": {

@@ -63,7 +63,9 @@
     "send": "Saada sõnum",
     "sending": "Saadan…",
     "success": "Aitäh! Sõnum on saadetud.",
-    "error": "Saatmine ebaõnnestus. Palun proovige uuesti."
+    "error": "Saatmine ebaõnnestus. Palun proovige uuesti.",
+    "required": "Palun täitke kõik väljad enne saatmist.",
+    "invalidEmail": "Palun sisestage korrektne e-posti aadress."
   },
 
   "footer": {
