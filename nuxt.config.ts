@@ -2,24 +2,33 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
+
   css: ["~/assets/css/main.css"],
+
+  modules: ["@nuxtjs/sitemap"],
+
+  sitemap: {
+    siteUrl: "https://primastella.ee",
+  },
 
   app: {
     head: {
       htmlAttrs: {
         lang: "et",
       },
+
+      meta: [
+        {
+          name: "viewport",
+          content: "width=device-width, initial-scale=1",
+        },
+      ],
+
       link: [
         {
           rel: "icon",
           type: "image/x-icon",
           href: "/images/primastella_favicon.ico",
-        },
-      ],
-      meta: [
-        {
-          name: "viewport",
-          content: "width=device-width, initial-scale=1",
         },
       ],
     },

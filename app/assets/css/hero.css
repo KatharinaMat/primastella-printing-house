@@ -175,6 +175,22 @@
   }
 }
 
+@media (max-width: 859px) and (orientation: landscape) {
+  .hero {
+    height: auto;
+    min-height: 320px;
+    padding: 0.75rem 1rem 1rem;
+  }
+
+  .hero-content {
+    justify-content: flex-start;
+  }
+
+  .primastella-svg-wrap {
+    width: 72vw;
+  }
+}
+
 /* =================================
    Desktop override
    ================================= */
