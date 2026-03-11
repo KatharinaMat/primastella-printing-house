@@ -322,6 +322,52 @@
 .services-arrow.open {
   transform: rotate(180deg);
 }
+/* =================================
+   Mobile landscape adjustment
+   ================================= */
+@media (max-width: 859px) and (orientation: landscape) {
+  .section-hero {
+    height: auto;
+    min-height: 150px;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+  }
+
+  .section-hero-inner {
+    height: auto;
+    padding: 0.45rem 1rem 0.5rem;
+    gap: 0.4rem;
+  }
+
+  .section-hero .primastella-svg-wrap {
+    width: min(82vw, 620px);
+  }
+
+  .section-hero .primastella-mask-text,
+  .section-hero .primastella-outline-text {
+    font-size: 150px;
+  }
+
+  .section-hero-controls {
+    gap: 0.35rem;
+  }
+
+  .section-hero-nav {
+    gap: 0.7rem;
+  }
+
+  .section-hero-nav a,
+  .section-hero-nav .services-toggle {
+    font-size: 0.74rem;
+    padding: 0.1rem 0;
+  }
+
+  .lang-switch button {
+    padding: 0.3rem 0.62rem;
+    min-width: 40px;
+    font-size: 0.74rem;
+  }
+}
 
 /* =================================
    SERVICES DROPDOWN / DESKTOP
